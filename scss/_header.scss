@@ -1,0 +1,103 @@
+// mobile-menu
+.burger,
+.laptop_hiden {
+  display: none;
+}
+.header {
+  color: $color_white;
+  background-position: center top;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+// end mobile-menu
+.header-row,
+.header__top-row,
+.header__down-row,
+.menu-items,
+.heading-description {
+  @include dspFlex;
+}
+.header__top-row,
+.header__down-row,
+.menu-items {
+  justify-content: space-between;
+}
+.header-row {
+  padding: 42px 0px;
+  justify-content: space-around;
+}
+.header__logo {
+  a {
+    img {
+      width: 300px;
+      object-fit: contain;
+    }
+  }
+}
+
+.menu-items {
+  font-size: 1.5em;
+  position: relative;
+  .sub_menu {
+    display: none;
+    position: absolute;
+    background-color: $color_sub-menu;
+    padding: 20px 15px;
+    border-radius: 2px;
+    li {
+      text-align: left;
+      width: 100%;
+      line-height: 35px;
+    }
+  }
+  li {
+    width: 195px;
+    text-align: center;
+    a {
+      display: block;
+      color: $color_white;
+      display: inline-block;
+      @include transition;
+      &:hover {
+        @include textShadow;
+      }
+    }
+  }
+}
+.header-phone {
+  a {
+    color: $color_white;
+    font-size: 1.5em;
+    @include transition;
+    &:hover {
+      @include textShadow;
+    }
+  }
+}
+.heading {
+  margin: 45px auto 60px;
+  h1 {
+    font-size: 3.125em;
+    text-align: center;
+    @include textShadow;
+    text-transform: uppercase;
+  }
+}
+.heading-description {
+  @include textShadow;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-family: "Roboto bold";
+  padding: 0 50px 61px;
+}
+.header__btn {
+  transform: translateX(70%);
+  button {
+    width: 362px;
+    height: 90px;
+    border-radius: 20px;
+    font-size: 1.5rem;
+    @include button;
+  }
+}
