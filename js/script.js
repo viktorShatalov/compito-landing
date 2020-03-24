@@ -29,6 +29,15 @@ jQuery(document).ready(function () {
 
 });
 
+// scroll-menu
+
+const $page = jQuery('html, body');
+jQuery('a[href*="#"]').click(function () {
+  $page.animate({
+    scrollTop: jQuery($.attr(this, 'href')).offset().top
+  }, 900);
+  return false;
+});
 
 // modal
 
@@ -72,21 +81,3 @@ function modal() {
   }
 }
 modal();
-
-
-// спрятать-показать sidebar-menu в категориях
-
-if (jQuery(window).width() > 480) {
-  // Тут код для больших разрешений,
-  //с шириной окна с сайтом больше 768 писелей
-} else {
-  // Тут код для маленьких экранов
-  jQuery(".cat-item").hide();
-
-  jQuery(".sidebar__title").click(
-    function () {
-      jQuery(".cat-item").toggle('slow')
-    }
-  );
-
-}

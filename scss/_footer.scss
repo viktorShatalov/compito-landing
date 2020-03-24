@@ -8,10 +8,16 @@
   padding: 35px 30px;
   h2 {
     margin-bottom: 30px;
+    text-align: left;
   }
   a {
     color: $color_footer-text;
   }
+}
+.footer__contact,
+.footer__infoBlock,
+.footer__logo {
+  width: 33.333%;
 }
 .footer__infoBlock {
   p {
@@ -50,7 +56,7 @@
   top: 0;
 }
 .footer-row__down {
-  padding: 40px 0 20px;
+  padding: 40px 20px 20px;
   color: $color_footer-signature;
   font-weight: bold;
 }
