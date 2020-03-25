@@ -81,3 +81,28 @@ function modal() {
   }
 }
 modal();
+
+// slider
+
+jQuery(document).ready(function () {
+  jQuery('.slider').slick({
+    arrows: false,
+    dots: true,
+    infinite: true,
+    lazyLoad: "progressive",
+    centerMode: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    variableWidth: true,
+    autoplay: false,
+    autoplaySpeed: 2200,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+        }
+      }
+    ]
+  });
+});

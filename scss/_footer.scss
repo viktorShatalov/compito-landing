@@ -72,6 +72,7 @@
     a {
       img {
         border-radius: 50%;
+        margin: 0 10px;
         @include transition;
         &:hover {
           @include instaShadow;

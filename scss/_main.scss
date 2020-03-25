@@ -37,8 +37,8 @@
       left: 5%;
       @include transition;
     }
-    &:hover {
-      @include textShadow;
+    &:hover h3 {
+      font-size: 1.525em;
     }
     &:hover::before {
       content: url(../img/icon/Vector_hover.png);
@@ -47,6 +47,7 @@
     h3 {
       font-size: 1.5em;
       margin: 0 auto 15px;
+      @include transition;
     }
     p {
       line-height: 20px;
@@ -146,7 +147,7 @@
       border-radius: 50%;
       width: 196px;
       margin: 0 auto 30px;
-      transition: all .9s ease;
+      transition: all 0.9s ease;
     }
     .item__block {
       position: relative;
@@ -240,9 +241,6 @@
       &:hover::before {
         transform: rotate(-20deg);
       }
-      &:hover{
-        @include textShadow;
-      }
     }
     .btn {
       margin: 20px auto 35px;
@@ -262,6 +260,197 @@
       width: 100%;
       height: 100%;
       object-fit: contain;
+    }
+  }
+}
+// advantages
+
+#advantages {
+  .row {
+    background-color: $color_advatages-block;
+    margin-bottom: 55px;
+    .conteiner {
+      padding: 0 20px;
+      h2 {
+        padding: 36px 0 20px;
+      }
+    }
+  }
+}
+.advantages__items {
+  @include dspFlex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  .item {
+    max-width: 32%;
+    position: relative;
+    text-align: center;
+    margin: 35px auto;
+    &::before {
+      content: url(../img/icon/icon_2.png);
+      margin: 0 auto 15px;
+      display: block;
+      width: 75px;
+      height: 75px;
+      @include transition;
+    }
+    &:hover::before {
+      content: url(../img/icon/icon_2_hover.png);
+      transform: scaleX(1.1) translate(-20px) rotate(-360deg);
+    }
+    h4 {
+      font-size: 1.75em;
+      margin-bottom: 22px;
+    }
+    p {
+      line-height: 20px;
+      font-weight: bold;
+    }
+  }
+}
+// ourWorks
+#ourWorks {
+  h2 {
+    margin-bottom: 50px;
+  }
+  .btn {
+    margin-bottom: 30px;
+    a {
+      display: block;
+      width: 100%;
+      max-width: 285px;
+      height: 63px;
+      @include button;
+      border-radius: 20px;
+      padding: 10px 0;
+      font-size: 1.5em;
+      text-align: center;
+      margin: auto;
+    }
+  }
+}
+.slider {
+  .slider__img {
+    margin: 0 10px;
+    img {
+      max-width: 435px;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+}
+.slick-dotted.slick-slider {
+  margin-bottom: 70px;
+}
+.slick-dots {
+  bottom: -50px;
+}
+.slick-dots li button:before {
+  font-size: 60px;
+}
+// workForYou
+#workForYou {
+  .row {
+    background-color: $color_advatages-block;
+    padding: 25px;
+    margin-bottom: 30px;
+  }
+}
+.workForYou {
+  @include dspFlex;
+  .left__block {
+    width: 30%;
+  }
+  .right__block {
+    width: 60%;
+    max-width: 790px;
+    h2 {
+      text-align: left;
+      margin: 20px auto 40px;
+    }
+    p {
+      text-align: justify;
+      line-height: 35px;
+      font-size: 1.875em;
+    }
+  }
+}
+// partners
+
+#partners {
+  .row {
+    h2 {
+      margin-bottom: 55px;
+    }
+  }
+}
+.partners__items {
+  margin-bottom: 55px;
+  .item {
+    @include dspFlex;
+    justify-content: space-around;
+    padding: 10px 0;
+    border-bottom: 2px solid rgba(153, 153, 153, 0.5);
+    &:nth-child(1) {
+      border-top: 2px solid rgba(153, 153, 153, 0.5);
+    }
+    img {
+      max-width: 225px;
+      height: 160px;
+      object-fit: contain;
+    }
+  }
+}
+
+// contacts
+#contacts {
+  .conteiner {
+    @include dspFlex;
+    justify-content: space-around;
+  }
+}
+.map {
+  min-width: 65%;
+  overflow: hidden;
+  padding-bottom: 35%;
+  position: relative;
+  height: 0;
+  iframe {
+    left: 0;
+    top: 0;
+    width: 750px;
+    height: 450px;
+    position: absolute;
+  }
+}
+.contacts__block {
+  h2 {
+    text-align: left;
+    &::after {
+      content: "";
+      width: 105px;
+      border: 5px solid #ff7c02;
+      display: block;
+      margin-top: 12px;
+    }
+  }
+  p {
+    line-height: 50px;
+    font-size: 1.875em;
+    margin: 30px auto 55px;
+  }
+  .btn {
+    margin-bottom: 30px;
+    button {
+      display: block;
+      width: 100%;
+      max-width: 253px;
+      height: 63px;
+      @include button;
+      border-radius: 20px;
+      padding: 10px 0;
+      font-size: 1.5em;
+      text-align: center;
     }
   }
 }
