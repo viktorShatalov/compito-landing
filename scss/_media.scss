@@ -3,44 +3,18 @@
   body,
   html {
     overflow-x: hidden;
-    font-size: 18px;
-  }
-  main {
-    padding: 100px 0px 0;
-  }
-  .info__left h1 {
-    font-size: 2.5em;
   }
   body.lock,
   html.lock {
     overflow: hidden;
   }
-  h1,
-  h2 {
-    text-align: left;
-  }
-  .header__top-row,
-  .topScents__row::before,
-  .topScents__row::after,
-  .ourWork__img img,
-  .footer__infoBlock,
-  .footer__img,
-  .modal-form__img {
-    display: none;
-  }
-  .footer__items {
-    flex-wrap: wrap;
-  }
   .header {
-    position: fixed;
     width: 100%;
     left: 0;
     top: 0;
     z-index: 3;
-    background-color: $color_white;
   }
   .header__content {
-    position: fixed;
     width: 100%;
     height: 100%;
     background-color: $color_white;
@@ -128,7 +102,7 @@
   //  Burger Menu *******************************************************************************************
   .mobile-menu {
     display: block;
-    position: fixed;
+    
     top: 64px;
     left: 0;
     width: 100%;
@@ -561,7 +535,7 @@
   }
 
   .header {
-    position: fixed;
+    
     width: 100%;
     left: 0;
     top: 0;
@@ -569,7 +543,7 @@
     background-color: $color_white;
   }
   .header__content {
-    position: fixed;
+    
     width: 100%;
     height: 100%;
     background-color: $color_white;
@@ -662,7 +636,7 @@
   //  Burger Menu *******************************************************************************************
   .mobile-menu {
     display: block;
-    position: fixed;
+    
     top: 64px;
     left: 0;
     width: 100%;
