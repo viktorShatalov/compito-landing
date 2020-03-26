@@ -1,29 +1,34 @@
 // first section
-#why .conteiner {
-  @include dspFlex;
-  justify-content: space-between;
-  margin: 45px auto 50px;
-  flex-wrap: wrap;
-}
-.left,
-.right {
-  max-width: 620px;
-  padding: 0 15px;
-  margin: 0 auto;
-}
-.left {
-  h2 {
-    line-height: 55px;
-    margin-bottom: 20px;
-    font-weight: normal;
+#why {
+  .conteiner {
+    @include dspFlex;
+    justify-content: space-between;
+    margin: 45px auto 50px;
+    flex-wrap: wrap;
+    .left,
+    .right {
+      max-width: 600px;
+      padding: 0 15px;
+      margin: 0 auto;
+    }
+    .left {
+      h2 {
+        line-height: 55px;
+        margin-bottom: 20px;
+        font-weight: normal;
+        text-align: left;
+        font-size: 2.85em;
+      }
+      p {
+        font-size: 1.25em;
+        text-indent: 4em;
+        text-align: justify;
+        line-height: 26px;
+      }
+    }
   }
-  p {
-    font-size: 1.25em;
-    text-indent: 4em;
-    text-align: justify;
-    line-height: 26px;
-  }
 }
+
 .right__box {
   position: relative;
   max-width: 620px;
@@ -267,6 +272,84 @@
     }
   }
 }
+
+// ligthing
+
+#ligthing {
+  h2 {
+    margin: 40px auto 45px;
+  }
+}
+.ligthing__content {
+  @include dspFlex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  .left {
+    flex: 0 1 600px;
+  }
+  .right {
+    flex: 0 1 670px;
+    font-size: 1.5em;
+    h4 {
+      margin: 10px 0 45px 75px;
+      position: relative;
+      display: inline-block;
+      &::before {
+        content: url(../img/ligthing/ok.png);
+        position: absolute;
+        left: -75px;
+        top: -10px;
+      }
+    }
+    p {
+      line-height: 28px;
+      margin-bottom: 50px;
+    }
+    .btn {
+      a {
+        display: block;
+        width: 100%;
+        max-width: 250px;
+        height: 40px;
+        @include button;
+        border-radius: 20px;
+        padding: 0px 40px;
+        text-align: center;
+        font-size: 1em;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+.ligth_slider-for {
+  max-width: 610px;
+  .slick-prev:before {
+    content: url(../img/ligthing/slider2/arrows_prew.png);
+  }
+  .slick-next:before {
+    content: url(../img/ligthing/slider2/arrows_next.png);
+  }
+  .slick-prev:before,
+  .slick-next:before {
+    position: absolute;
+    top: -54px;
+  }
+  .slick-next {
+    right: 55px;
+  }
+  .slick-prev {
+    left: 5px;
+    z-index: 1;
+  }
+}
+.ligth_slider-nav{
+  max-width: 610px;
+  height: 103px;
+  img{
+    width: 150px;
+  }
+}
+
 // advantages
 
 #advantages {

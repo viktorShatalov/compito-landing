@@ -102,3 +102,28 @@ jQuery(document).ready(function () {
     ]
   });
 });
+
+// slider 2
+
+jQuery(document).ready(function () {
+  jQuery('.ligth_slider-for').slick({
+    arrows: true,
+    dots: false,
+    infinite: true,
+    lazyLoad: "progressive",
+    asNavFor: '.ligth_slider-nav',
+  });
+});
+
+
+jQuery(document).ready(function () {
+  jQuery('.ligth_slider-nav').slick({
+    arrows: false,
+    dots: false,
+    infinite: true,
+    lazyLoad: "progressive",
+    asNavFor: '.ligth_slider-for',
+    centerMode: true,
+    slidesToShow: 5,
+  });
+});
