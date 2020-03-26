@@ -2,14 +2,10 @@
 
 jQuery(document).ready(function () {
   jQuery('.burger').click(function () {
-    jQuery('.burger,.mobile-menu,.header__content').toggleClass('active');
+    jQuery('.burger,.header-menu').toggleClass('active');
     jQuery('html,body').toggleClass('lock');
   })
 })
-
-function changeText() {
-  return document.querySelector("#button").innerHTML = "Добавлено";
-}
 
 // dropdawnMenu
 
@@ -98,9 +94,9 @@ jQuery(document).ready(function () {
     autoplaySpeed: 2200,
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 768,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 1,
         }
       }
     ]

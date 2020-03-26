@@ -3,21 +3,29 @@
 }
 .footer__items {
   @include dspFlex;
+  flex-wrap: wrap;
   color: $color_footer-text;
-  justify-content: space-between;
-  padding: 35px 30px;
+  justify-content: space-around;
+  padding: 35px 0;
   h2 {
     margin-bottom: 30px;
     text-align: left;
   }
   a {
     color: $color_footer-text;
+    display: block;
   }
 }
 .footer__contact,
 .footer__infoBlock,
 .footer__logo {
-  width: 33.333%;
+  max-width: 255px;
+}
+.footer__logo{
+  img {
+    max-width: 250px;
+  }
+  padding: 10px 10px 0;
 }
 .footer__infoBlock {
   p {
@@ -68,15 +76,14 @@
   }
 }
 .footer__social {
-  .insta {
-    a {
-      img {
-        border-radius: 50%;
-        margin: 0 10px;
-        @include transition;
-        &:hover {
-          @include instaShadow;
-        }
+  @include dspFlex;
+  a {
+    img {
+      border-radius: 50%;
+      margin: 0 10px;
+      @include transition;
+      &:hover {
+        @include instaShadow;
       }
     }
   }
