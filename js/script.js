@@ -110,8 +110,19 @@ jQuery(document).ready(function () {
     arrows: true,
     dots: false,
     infinite: true,
+    autoplay:false,
     lazyLoad: "progressive",
     asNavFor: '.ligth_slider-nav',
+    fade: true,
+    responsive: [
+      {
+        breakpoint: 480,
+        settings: {
+          arrows: false,
+          centerMode: true,
+        }
+      }
+    ]
   });
 });
 
@@ -120,10 +131,19 @@ jQuery(document).ready(function () {
   jQuery('.ligth_slider-nav').slick({
     arrows: false,
     dots: false,
-    infinite: true,
     lazyLoad: "progressive",
     asNavFor: '.ligth_slider-for',
     centerMode: true,
-    slidesToShow: 5,
+    slidesToShow: 4,
+    focusOnSelect: true,
+    centerPadding: '0',
+    responsive: [
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 4,
+        }
+      }
+    ]
   });
 });

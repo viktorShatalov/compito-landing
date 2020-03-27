@@ -245,6 +245,34 @@
   #contacts {
     display: none;
   }
+  .ligthing__content {
+    flex-direction: column-reverse;
+    .right {
+      margin-bottom: 25px;
+      p{
+        text-align: justify;
+      }
+    }
+  }
+  .typeOfLigth {
+    .btn button {
+      width: 180px;
+      height: 45px;
+      font-size: 1em;
+    }
+  }
+  .typeOfLigth__items {
+    .item__img {
+      margin-bottom: 15px;
+      p{
+        margin: 0 0 12px 20px;
+      }
+    }
+    .item {
+      flex-direction: column;
+      padding: 10px 20px;
+    }
+  }
   .footer__contact,
   .footer__infoBlock,
   .footer__logo {
