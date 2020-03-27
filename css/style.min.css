@@ -980,8 +980,8 @@ h2 {
 
 .advantages__items .item:hover::before {
   content: url(../img/icon/icon_2_hover.png);
-  -webkit-transform: scaleX(1.1) translate(-20px) rotate(-360deg);
-          transform: scaleX(1.1) translate(-20px) rotate(-360deg);
+  -webkit-transform: scaleX(1.1) rotate(-360deg);
+          transform: scaleX(1.1) rotate(-360deg);
 }
 
 .advantages__items .item h4 {
@@ -1141,6 +1141,10 @@ h2 {
   width: 750px;
   height: 450px;
   position: absolute;
+}
+
+.contacts__block {
+  width: 100%;
 }
 
 .contacts__block h2 {
