@@ -249,7 +249,7 @@
     flex-direction: column-reverse;
     .right {
       margin-bottom: 25px;
-      p{
+      p {
         text-align: justify;
       }
     }
@@ -264,7 +264,7 @@
   .typeOfLigth__items {
     .item__img {
       margin-bottom: 15px;
-      p{
+      p {
         margin: 0 0 12px 20px;
       }
     }
@@ -300,5 +300,35 @@
   }
   .footer__items {
     padding: 35px 10px;
+  }
+
+  // pages
+  .examples__work {
+    a {
+      width: 48%;
+      margin: 1% auto;
+    }
+  }
+  .dojd,
+  .kaplya,
+  .tuman,
+  .lighting,
+  .about_us {
+    height: 329px;
+  }
+  .dojd {
+    background-image: url(../img/background/mobile/bg_2.jpg);
+  }
+  .kaplya {
+    background-image: url(../img/background/mobile/bg_3.jpg);
+  }
+  .tuman {
+    background-image: url(../img/background/mobile/bg_4.jpg);
+  }
+  .lighting {
+    background-image: url(../img/background/mobile/bg_6.jpg);
+  }
+  .about_us {
+    background-image: url(../img/background/mobile/bg_5.jpg);
   }
 }
