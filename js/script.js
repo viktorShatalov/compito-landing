@@ -10,9 +10,9 @@ jQuery(document).ready(function () {
 // dropdawnMenu
 
 jQuery(document).ready(function () {
-  jQuery('.menu-items li a').on('click', function (e) {
-    e.preventDefault();
-  });
+  // jQuery('.menu-items li a').on('click', function (e) {
+  //   e.preventDefault();
+  // });
 
   jQuery('.menu-items li').hover(function () {
     clearTimeout($.data(this, 'timer'));
